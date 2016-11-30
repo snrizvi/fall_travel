@@ -8,6 +8,7 @@ class WelcomeController < ApplicationController
   def about
       @color = params[:color]
       @size = params[:size]
+      @pic = params[:pic]
   end
 end
 
