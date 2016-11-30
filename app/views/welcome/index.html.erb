@@ -1,0 +1,14 @@
+
+<h1>Welcome to The Naureen Rizvi Travel Site</h1>
+<p>This is my very awesome travel site.</p>
+
+
+<ul>
+  <% @countries.each do |country| %>
+    <li><%= country %></li>
+  <% end %>
+</ul>
+
+<% @travel_pics.each do |pic| %>
+  <%= image_tag pic %>
+<% end %>

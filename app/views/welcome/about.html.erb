@@ -1,0 +1,22 @@
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+<h1>Welcome#about</h1>
+<p>Find me in app/views/welcome/about.html.erb</p>
+
+</style>
+<h1>About me</h1>
+<p>Lots of interesting stuffs.</p>
+<p>My favorite color is <%= @color %> and my show size is
+<%= @size %>, which is average sized
+
+</p>
+
+<% if @size.to_i >12 %>
+    <p> My feet are too big</p>
+<% end %>  
+
+<p> My favorite image is <% image_tag @pic, 
+class: "images" %> </p>
